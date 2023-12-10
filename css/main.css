@@ -202,11 +202,11 @@ h2[data-name="project"]
 
 @font-face{
     font-family: opendyslexic;
-    src: url(/fonts/OpenDyslexic-Regular.otf)
+    src: url(./fonts/OpenDyslexic-Regular.otf)
 }
 @font-face{
     font-family: opendyslexic;
-    src: url(/fonts/OpenDyslexic-Bold.otf);
+    src: url(./fonts/OpenDyslexic-Bold.otf);
     font-weight: bold;
 }
 /*
