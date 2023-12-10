@@ -154,7 +154,6 @@ p[data-name = "project"]
 
 p[data-name = "alt"]
 {
-    font-weight:italic;
     color:black;
     background-color:#B67A8D;
 }
@@ -197,6 +196,7 @@ h2[data-name="project"]
 .fontSection{
     display: flex;
     justify-content:center;
+    font-family: opendyslexic;
 }
 
 
@@ -209,11 +209,13 @@ h2[data-name="project"]
     src: url(/fonts/OpenDyslexic-Bold.otf);
     font-weight: bold;
 }
+/*
 @font-face{
     font-family: opendyslexic;
     src: url(/fonts/OpenDyslexic-Italic.otf);
     font-weight: italic;
 }
+*/
 
 a[name="externalLink"]
 {

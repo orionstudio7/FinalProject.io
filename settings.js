@@ -8,13 +8,12 @@ function setFont(fontname) {
   //  this will get all of the elements in the site
     //sets it to the font we listed in the font-name
     for (let i = 0; i < elements.length; i++) {
-      elements[i].style.fontFamily = fontname;
+        elements[i].style.fontFamily = fontname;
     }
 }
 
 function loadFont()
 {
-    
     const elements = document.getElementsByTagName("*"); 
     for (let i = 0; i < elements.length; i++) 
     {
