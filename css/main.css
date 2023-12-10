@@ -238,3 +238,18 @@ article[name="resume"]
     display:flex;
     justify-content:center;
 }
+
+
+/*Class Projects*/
+
+form [name = "hwForm"]
+{
+    background-color:#B67A8D;
+    color: black;
+    width:50%;
+}
+section[name = "hwForm"]
+{
+    display: flex;
+    justify-content: center;
+}
