@@ -233,7 +233,7 @@ table, th, td
     border: 3px solid black;
     border-collapse:collapse;
 }
-article[name="resume"]
+section[name="resume"]
 {
     display:flex;
     justify-content:center;
