@@ -179,6 +179,7 @@ h2[name="project"]
     text-align:center;
     background-color:#B67A8D;
     color:black;
+    margin-left:0;
     
 }
 
@@ -187,6 +188,7 @@ h2[name="project"]
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
 }
+
 
 
 
