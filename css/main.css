@@ -142,7 +142,7 @@ label
 
 /*Projects*/
 
-section[name="summary"]
+.summary
 {
     display: flex;
 }
@@ -233,7 +233,7 @@ table, th, td
     border: 3px solid black;
     border-collapse:collapse;
 }
-section[name="resume"]
+.resume 
 {
     display:flex;
     justify-content:center;
@@ -248,7 +248,7 @@ form [name = "hwForm"]
     color: black;
     width:50%;
 }
-section[name = "hwForm"]
+.hwForm
 {
     display: flex;
     justify-content: center;
