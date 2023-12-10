@@ -1,40 +1,9 @@
-Assignment 2 - Max Evans
+Final Project -  Max Evans
 
 
-Below is a list of all elements used in the website used to track which elements I had already edited
-Elements Used:
-    body - edited
-    header - edited
-    footer - edited
-    nav - edited
-    ul - edited
-    li - edited
-    a  - edited
-    h1 - edited
-    article - edited
+There are two goals to this website: 
 
-    table - edited
-        tr - edited
-        td - edited
-    
-    img - edited through the floated id
-    
-    video - edited 
-    
-    section - edited
-    
-    h2 -edited
-    form - edited
-    label - edited
-    
-    
-    
-    
-    Ways I went Above and Beyond:
-    
-        - 4 significant changes when the browser changes size 
-        - styling for tabs and the special character &emsp;
-        - all color combinations used were checked with the web-aim tracker
-        - added a new page for settings 
-        - added a custom font family - Open Dyslexic
-        - Added more HTML Semantic elements (such as footers to all pages)
+1. Display what I have learned in my HTML/CSS/Javascript course in grad school 
+2. Display past gaming projects I have worked on 
+
+As I continue to update this site, I hope to make it more accessible to users with disabilities. 
