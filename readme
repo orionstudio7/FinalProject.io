@@ -7,3 +7,7 @@ There are two goals to this website:
 2. Display past gaming projects I have worked on 
 
 As I continue to update this site, I hope to make it more accessible to users with disabilities. 
+
+All color combinations are made from a custom color palette I designed that is both color-blind friendly, and maintains a W3C Contrast score of >4.5 for white and black foregrounds (such as text colors against a background.)
+
+On the settings page, the user has the option to convert the entire website to OpenDyslexic
