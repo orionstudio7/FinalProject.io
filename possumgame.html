@@ -1,0 +1,117 @@
+<!--
+Code by: Max Evans
+Last Updated: 11/3/2023
+-->
+<!DOCTYPE html>
+
+<html>
+    <!--head represents a "prologue" to the rest of the document-->
+    <head>
+        <title>Max Evans</title> 
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="settings.js"></script>
+    </head>
+    
+    <body>
+        <!--Includes introductory and/or navigational aids -->
+        <header>
+            
+            <nav>
+                <ul class = "nav-list">
+                    <li><a href = "./index.html">Home</a></li>
+                    <li><a href = "./classprojects.html">Class Projects</a></li>
+                    <li><a href = "./accessibledesign.html">Game Design Projects</a></li>
+                    <li><a href = "./resume.html">Resume</a></li>
+                    <li><a href = "./settings.html">Settings</a></li>
+                    <li><a href = "./contact.html">Contact Me</a></li> 
+                </ul>
+            </nav>
+        </header>
+        
+        <h1  name = "project" >Do You Mind</h1>
+        <section name = "summary" id = "app">
+<!--            -->
+            
+            <template v-if="getMedia().type =='img'">
+                <img :src="getMedia().url"width="300" height="200" :alt="getMedia().alt"/>
+            </template>
+            
+            <template v-if="getMedia().type =='video'">
+                <div>
+                    <video width="500" height="250" name = "project" :src="getMedia().url" controls></video>
+                    <p name = "alt">{{media[index].alt}}</p>
+                
+                </div>
+                
+            </template>
+<!--            -->
+            <button @click="next">Next</button>
+            <p name = "project">
+                Stealth game made for windows computers. Play as a possum with a giant magnet attacking crypto servers and hiding from the cops! Music made in Pixabay.  
+            </p>    
+            
+
+        </section>
+        
+        <section>
+            <h2  name = "project">What I Learned</h2>
+            <li>Unity's Input System </li> 
+            <li>Collisions</li>
+        </section>
+        <section>
+            <h2 name = "project">Skills</h2>
+            <li>Unity</li> 
+            <li>C#</li>
+            <li>Audio Editing</li>
+        </section>
+        
+        <footer>Open Source. MIT License.</footer>
+    </body>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+
+    
+    <script>
+            var app = new Vue({
+                el: "#app", 
+                data: { 
+                    title:"Can You Guess What Pokemon Evolves Into This One?",
+                    media: 
+                        [{url:"./images/possum1.png", type:"img",  alt:"cartoon possum in a server room"},
+                         {url:"./images/possum2.png", type:"img", alt:"cartoon possum in a server room"},
+                         {url:"./videos/attackservers.mp4", type:"video", alt:"alt: possum attacks a server with a magnet"},
+                         {url:"./videos/gameOver.mp4", type:"video", alt:"alt: possum is caught by a cop and the game over screen of an existential possum appears"}
+                        ],
+                        
+
+                    index :0,
+                },
+                
+                methods: {       
+                    next: function()
+                    {
+                        alert(this.index);
+                        if(this.index < this.media.length-1)
+                        {
+                            this.index++;
+                        }
+                        
+                        else
+                        {
+                            this.index = 0;
+                        }
+                    },
+                    
+                    getMedia: function()
+                    {
+                        return this.media[this.index];
+                    }
+                }
+                
+            })
+        </script>
+    
+    
+
+</html>

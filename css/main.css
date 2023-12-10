@@ -1,0 +1,219 @@
+body{
+    padding:0;
+    margin:0;
+    background-color:#1177cc;
+    color:white;
+
+}
+header{
+    background-color:#B67A8D;
+}
+
+footer{
+    background-color:#B67A8D;
+    display:flex;
+    justify-content:flex-end;
+    color: black;
+    height:40px;
+    
+}
+
+article
+{
+    margin-left:100px;
+    margin-right:100px;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+nav a
+{
+    color: black;
+}
+
+nav a:visited
+{
+    color: white;
+}
+
+    
+#pfp
+{
+    display: block;
+    float:none;   
+    padding:0px;
+    align-content:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/*Reactive Design*/
+@media (max-width: 600px) {
+    
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+    nav a {
+        width: 150px;
+
+    }
+    
+    article
+    {
+        margin-left:50px;
+        margin-right:50px;
+    }
+    
+    footer{
+        background-color:#B67A8D;
+        display:flex;
+        justify-content:center;
+        color: black;
+        height:40px;
+    }
+}
+
+@media (max-width:400px) {
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        
+    }
+
+    nav a {
+        width: 100px;
+    }
+    
+    
+    footer{
+        background-color:#B67A8D;
+        display:flex;
+        text-align:center;
+        color: black;
+        justify-content:center;
+        height:40px;
+    }
+    
+    article
+    {
+        margin-left:25px;
+        margin-right:25px;
+    }
+}
+
+
+h1
+{
+    text-align:center;
+}
+
+
+
+/*Contact Form*/
+form
+{
+    background-color:#B67A8D;
+    color: black;
+    width:50%;
+    
+}
+
+label
+{
+    font-weight:bold;
+}
+
+#contactArticle
+{
+    display: flex;
+    justify-content: center;
+}
+
+/*Projects*/
+
+section[name="summary"]
+{
+    display: flex;
+}
+
+p[name = "project"]
+{
+    padding-left: 10px;
+}
+
+p[name = "alt"]
+{
+    font-weight:italic;
+    color:black;
+    background-color:#B67A8D;
+}
+.item{
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    color:black;
+    width = 50%;
+}
+
+h1[name="project"]
+{
+    text-align:center;
+    background-color:#B67A8D;
+    color:black;
+    
+}
+
+h2[name="project"]
+{
+    text-align:center;
+    background-color:#B67A8D;
+    color:black;
+    
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+
+
+/*Settings*/
+
+section[name="fontSection"]{
+    display: flex;
+    justify-content:center;
+}
+
+
+@font-face{
+    font-family: opendyslexic;
+    src: url(/fonts/OpenDyslexic-Regular.otf)
+}
+@font-face{
+    font-family: opendyslexic;
+    src: url(/fonts/OpenDyslexic-Bold.otf);
+    font-weight: bold;
+}
+@font-face{
+    font-family: opendyslexic;
+    src: url(/fonts/OpenDyslexic-Italic.otf);
+    font-weight: italic;
+}
+
+a[name="externalLink"]
+{
+    color:white;
+}
