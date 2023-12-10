@@ -27,8 +27,8 @@ Last Updated: 11/3/2023
                 </ul>
             </nav>
         </header>
-        
-        <h1  name = "project" >Do You Mind</h1>
+<!--        data-data-name is an alternative when data-name is depreciated on an object-->
+        <h1  data-name = "project" >Do You Mind</h1>
         <section class = "summary" id = "app">
 <!--            -->
             
@@ -38,15 +38,15 @@ Last Updated: 11/3/2023
             
             <template v-if="getMedia().type =='video'">
                 <div>
-                    <video width="500" height="250" name = "project" :src="getMedia().url" controls></video>
-                    <p name = "alt">{{media[index].alt}}</p>
+                    <video width="500" height="250" data-name = "project" :src="getMedia().url" controls></video>
+                    <p data-name = "alt">{{media[index].alt}}</p>
                 
                 </div>
                 
             </template>
 <!--            -->
             <button @click="next">Next</button>
-            <p name = "project">
+            <p data-name = "project">
                 Stealth game made for windows computers. Play as a possum with a giant magnet attacking crypto servers and hiding from the cops! Music made in Pixabay.  
             </p>    
             
@@ -54,14 +54,14 @@ Last Updated: 11/3/2023
         </section>
         
         <section>
-            <h2  name = "project">What I Learned</h2>
+            <h2  data-name = "project">What I Learned</h2>
             <ul>
                 <li>Unity's Input System </li> 
                 <li>Collisions</li>
             </ul>
         </section>
         <section>
-            <h2 name = "project">Skills</h2>
+            <h2 data-name = "project">Skills</h2>
             <ul>
                 <li>Unity</li> 
                 <li>C#</li>

@@ -147,12 +147,12 @@ label
     display: flex;
 }
 
-p[name = "project"]
+p[data-name = "project"]
 {
     padding-left: 10px;
 }
 
-p[name = "alt"]
+p[data-name = "alt"]
 {
     font-weight:italic;
     color:black;
@@ -166,7 +166,7 @@ p[name = "alt"]
     width = 50%;
 }
 
-h1[name="project"]
+h1[data-name="project"]
 {
     text-align:center;
     background-color:#B67A8D;
@@ -174,7 +174,7 @@ h1[name="project"]
     
 }
 
-h2[name="project"]
+h2[data-name="project"]
 {
     text-align:center;
     background-color:#B67A8D;
